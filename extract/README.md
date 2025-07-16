@@ -17,10 +17,10 @@ It uses [cyvcf2](https://brentp.github.io/cyvcf2/) for fast VCF parsing and supp
 - Python 3.6+
 - [cyvcf2](https://pypi.org/project/cyvcf2/)
 
-```bash
+
 pip install cyvcf2
 
-Assume these files exist in your working directory:
+# ✅ Required files:
 
 extract_variants.py 
 
