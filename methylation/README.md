@@ -1,4 +1,4 @@
-# 🧬 clean_methylation_bed.py — Methylation Data Cleaner & Converter
+# 🧬 Methylation Data Cleaner & Converter
 
 This script processes raw DNA methylation data files in **BED-like** or **WIG** format, filters by methylation level, and outputs a clean **BED file** ready for integration with genome annotation pipelines (e.g., for SNP annotation).
 
