@@ -1,4 +1,4 @@
-# Variant Extraction Pipeline
+# 🧬 Variant Extraction Pipeline
 
 ## Overview
 
