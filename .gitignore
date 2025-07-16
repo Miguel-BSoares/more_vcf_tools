@@ -1,0 +1,22 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore logs and temp data
+*.log
+*.tmp
+
+# Ignore ZIPs or other archives
+*.zip
+*.tar.gz
+
+# Ignore user-generated files
+*.vcf
+*.vcf.gz
+*.tbi
+*.tsv
+*.txt
+
+# Optional: Ignore VS Code or PyCharm files
+.vscode/
+.idea/
