@@ -30,8 +30,9 @@ variants.vcf.gz.tbi
 
 snps.txt 
 
+## ▶️ Example Usage
 
-
+```bash
 ## extract variants 
 
 chmod +x extract_variants_cyvcf2.py
