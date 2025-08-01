@@ -60,24 +60,6 @@ def extract_variants(vcf_path, coords, out_prefix, flank_left, flank_right):
         except ValueError as e:
             no_snp_file.write(f"{chrom}\t{pos}\t# ERROR: {str(e)}\n")
 
-    # --- GT combination count addition ---
-    import collections
-    gt_counter = collections.Counter()
-    with open(allele_dist_path, 'r') as f:
-        next(f)  # skip header
-        for line in f:
-            fields = line.strip().split('\t')
-            if len(fields) < 6:
-                continue
-            gts = fields[5].split(',')
-            for gt in gts:
-                gt_counter[gt] += 1
-
-    allele_file.write('\nGT_COMBINATION_COUNTS\n')
-    for gt, count in sorted(gt_counter.items()):
-        allele_file.write(f"{gt}\t{count}\n")
-    # --- end addition ---
-
     allele_file.close()
     no_snp_file.close()
     extracted_vcf.close()
